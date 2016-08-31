@@ -1,7 +1,7 @@
 # Zero If Statement experiment
 
 Woke up this morning with a desire to see if I can do away with if statements altogether.
-I decided to implement a quick and dirty login system in swift that just checks to see
+I decided to implement a quick and dirty [login system](https://github.com/StorminGorman/ZeroIfExperiment/blob/master/Login.swift) in swift that just checks to see
 whether the supplied password matches the stored one and returns a response accordingly.
 
 The implementation boiled down to these two differences..

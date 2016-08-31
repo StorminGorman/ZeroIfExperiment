@@ -6,6 +6,7 @@ whether the supplied password matches the stored one and returns a response acco
 
 The implementation boiled down to these two differences..
 
+Using a map/dictionary instead of an If
 ```
 let potentialActions: [Bool:Action] = [
     true : LoggedInAction(cred: cred),
@@ -16,7 +17,7 @@ let action = potentialActions[auth.passwordMatches()]!
 print(action.response())
 ```
 
-and 
+and the normal way
 
 ```
 let auth = UserAuthentication(username: username, password: password, credentials: creds)
